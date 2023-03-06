@@ -1,0 +1,353 @@
+.team-slider-two.owl-theme .owl-nav [class*=owl-]:hover, .team-slider-two.owl-theme .owl-nav [class*=owl-]:focus, .post-meta li a:hover, .post-meta li a:focus, h5 a:hover, h6 a:hover, h5 a:focus, h6 a:focus, .widget_categories a:hover, .widget_archive a:hover, .widget_categories a:focus, .widget_archive a:focus, .widget_meta a:hover, .widget_meta a:focus, .foot-bottom a, .main-navigation a:hover, .widget_recent_entries a:hover, .widget_recent_entries a:focus, .widget_recent_comments .recentcomments a:hover, .widget_recent_comments .recentcomments a:focus, .widget_recent_entries .post-date, .blog-detail .post-meta li a, .logged-in-as a, .read-more:hover, .read-more:focus, .blog-detail .post-meta li i, .comment-meta a, .says, .sp-100 .pagination-blog .navigation .nav-links a, .post-tags a:hover, .post-tags a:focus, .btn-one:hover, .btn-one:focus, .widget_pages a:hover, .widget_pages a:focus, .hero-sec .caption h1, .main-menu ul ul.sub-menu a:hover, .navbar-expand-lg a:hover, .services-5 .icon-box i, .services-5 .icon-box h4 a:hover, .widget_categories li:hover, .widget_archive li:hover, .widget_categories li a:focus, .widget_archive li a:focus, .testimonials-5 .testimonial-item i, .fibu h2, .fibu-port h5:hover.portfolio-5 .box-body:hover .box-title, .portfolio-5 .box-body:hover i, .busi-dark-banner .section-title-2, .busi-dark-feat .about-box i, .busi-dark-ser .serviceBox .service-icon, .busi-dark-co2 h2, .educ-home .about-box i, .buco .feature-box .icon, .buco .feature-box .link-details, .section-heading .sm-title, .buco .our-team .post, .buco .our-team .post-title a:hover, .creativo-seo .readmore-btn:hover, .creativo-seo .feature-box .link-details, .creativo-service .link-box, .creativo-team .post, .creativo-blog .blog-item .entry-meta a:hover, .constech-feat .feature-box .icon-main i, .constech-service .section-heading > span, .constech-service .service-box .icon, .constech-service .service-box .link-details, .constech-port .section-heading > span.section-title, .constech-team .section-heading > span, .constech-team .post, .constech-blog .section-heading > span, .common-heading>span, .startup-team .our-team .post, .corporate-service .service-logo i, .corporate-testi .client-heading .icon, .corporate-team .our-team:hover .profile-title, .corporate-blog .post-body .post-meta-list > span, .corporate-blog .post-meta-list .meta-date-text, .post-meta-list .post-cat a, .corporate-blog .blog-btn, .corporate-service a:hover {
+    color: #87aa01 !important;
+}
+
+a{text-decoration: none}
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:underline}
+a:active {text-decoration:none}
+
+.sidebar-widget a:hover, .sidebar-widget a:focus {
+    color: #87aa01 !important;
+}
+
+.btn-dark, .service-box2:after, .feature-box::after, .class-box:hover h5:before, .class-box:hover h5:after, .class-box:focus h5:before, .class-box:focus h5:after, section.cta, .foot-title h4::after, .main-navigation .nav-menu>.menu-item-has-children > .sub-menu li a:before, .search-form input[type='submit'], .title-sep2::after, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover, .comment-respond .comment-reply-title::after, .comment-respond .form-submit input, .widget_tag_cloud .tagcloud a:hover, .widget_tag_cloud .tagcloud a:focus, .pagination .nav-links .page-numbers.current, .pagination .nav-links .page-numbers:hover, .reply:focus, .blog .blog-item:hover .date, .blog .blog-item:focus .date, .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span, .owl-theme .owl-dots .owl-dot:focus span, .service-box3col:after, .service-box4col:after, .service-box:hover .service-content, .project:hover .proj-content, .project:focus .proj-content, .header-three, .bg-theme, .btn-2, .cta-2, .carousel-indicators .active, .our-team .social_media_team, .service-box3 h5::after, .title-line > i, .main-menu ul ul.sub-menu a::before, .cta-4, .blog-5 .btn-wraper .read-more-btn:hover, .about .about-box:before, .tradebusi-port .box-content, .busi-dark-banner .btn-2:hover, .busi-dark-ser .serviceBox, .busi-dark-ser .service-content:before, .busi-dark-blog .btn-wraper .read-more-btn, .buco .btn-wraper .home-btn:hover, .educ-home .btn-wraper .home-btn:hover, .buco .btn-wraper .home-btn, .educ-home .btn-wraper .home-btn, .heading-divider .heading-seperator::before, .educ-home .btn, .cta-7 .buco .btn, .busi-corp, .creativo-seo .readmore-btn, .creativo-testi .client-pic i, .creativo-co, .btn-one, .constech-hero .content-sec .readmore-btn, .startup-features .feature-box .icon-main, .startup-service .service-icon, .corporate-co1 .btn:hover {
+    background-color: #87aa01 !important;
+}
+
+.section-title-5 .separator ul::before {
+	background: #87aa01 !important;
+}
+
+.section-title-5 .separator ul::after {
+	background: #87aa01 !important;
+}
+
+.hero-sec {
+	background-color: #222122;
+} 
+
+.hero-sec:before {
+	background-color: #1f1f1f;
+}
+
+.hero-sec .content-sec .section-subtitle {
+  color: #233d63; 
+}
+
+.hero-sec .content-sec .section-title {
+  color: #fff;
+}
+
+.hero-sec .content-sec .heading__description p {
+  color: #fff;
+}
+
+.hero-sec .content-sec .readmore-btn {
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+
+.hero-sec .content-sec .readmore-btn:hover {
+    color: #fff;
+    background-color: #7e9f00;
+    border: none;
+}
+
+.btn-wraper .home-btn:hover{
+  background-color: #4d46b5;
+  color: #fff;
+}
+
+.bg-color{
+  background-color: #282e3f;
+}
+
+.feature-area {
+	background-color: #f0f0f0;
+}
+
+.feature-area .feature-box{
+	background-color: #fff;
+}
+
+.feature-area .feature-box .icon {
+	color: #87aa01;
+}
+
+.feature-area .feature-box .title a {
+	color: #666;
+}
+
+.feature-area .feature-box .description{
+    color: #c7c3c4;
+}
+
+.feature-box:hover .title {
+  color: #87aa01;
+}
+
+.services-5{
+  background-color: #fff;
+}
+
+.services-5 .service-box {
+	background: #000;
+	border-radius: 15px;
+}
+
+.services-5 .service-box:hover{
+    background-color: #87aa01;
+}
+
+.services-5 .service-box:hover i,
+.services-5 .service-box:hover p,
+.services-5 .service-box:hover h4 {
+ 	color: #000;
+}
+
+.services-5 .service-box i {
+ 	color: #87aa01;
+}
+
+.services-5 .service-box h4  {
+	color: #87aa01;
+}
+
+.services-5 .service-box p {
+	color: #fff;
+}
+
+.services-5 .work-out {
+  	background-color: #131212;
+}
+
+.services-5 .service-box:hover a{
+ 	color: #fff
+}
+
+.cta-7 {
+ 	background-color: #000;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.cta-7 h2{
+	color: #fff;
+}
+
+.cta-7 .btn{
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn:hover{
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+.portfolio-box{
+     background-color: #000; 
+}
+
+.portfolio-box .portfolio-box-content{
+    color: #fff;
+}
+
+.portfolio-box .title {
+	color: #fff;
+}
+
+.portfolio-box p {
+    color: #fff !important;
+}    
+
+.portfolio-box .title:hover {
+  	color: #87aa01;
+}
+
+.portfolio-box .icon li a {
+    color: #fff;
+}
+
+ .portfolio-box .icon li a:hover {
+    color: #87aa01;
+}
+
+.portfolio-box .icon li a{
+   background-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	background-color: #f19ab1;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #87aa01;
+}    
+
+#testimonials{
+ 	background-color: #f6f6f6;
+}
+
+#testimonials:hover .testimonial-pic:before{
+    background: #fff;
+}
+
+#testimonials .testimonials-content .testimonial-profile span {
+ 	color: #1f1f1f
+}
+
+#testimonials .testimonials-content .testimonial-profile span.post {
+    color: #87aa01; 
+}    
+
+.font1 {
+  	color: #87aa01;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #87aa01;
+}
+
+.testimonials-5 .owl-dot.active {
+    background-color: #87aa01 !important;
+}   
+
+.our-team-sec .section-bg{
+	background: #fff;
+}
+
+.our-team-sec .our-team .team-content h3, span {
+  	color: #fff;
+}
+
+.our-team-sec .section-title-5 {
+  	color: #fff;
+}
+
+.our-team-sec .our-team .title{
+	color: #fff;
+}
+
+.our-team-sec .our-team .post{
+    color: #fff;
+}
+
+.our-team-sec .our-team .social li a{
+	background: #fff;
+	color: #4c5462;
+}
+
+.our-team-sec .our-team .team-content{
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #000000BF 0%, #beff009c 140%);
+}
+
+.blog-5 .box{
+    background: linear-gradient(0deg, #000000BF 0%, #beff009c 140%); 
+}
+
+.blog-5 .box .box-content{
+    color: #fff;
+}
+
+.blog-5 .btn-wraper1 {
+  	border: 1px solid white;
+}
+
+.blog-5 .btn-wraper1:hover {
+	background-color: #87aa01;
+	color: #fff;
+}
+
+.blog-5 .box .title{
+    color: #fff; 
+}
+
+.blog-5 .box .post{
+    color: #fff;
+}
+
+.blog-5 .box .icon li a{
+    color: #fff; 
+}
+
+.box:hover .box-content h3{
+    color:#fff;
+}
+
+.box .box-content h3{
+    color:#fff !important;
+}
+
+.footer:before{
+ 	background-color: #000;
+}
+
+.footer .foot-top .desc{
+  	color: #888;
+}
+
+.footer .foot-top .menu-link li:hover a{
+  	color: #87aa01; 
+}
+
+.footer .foot-top .social-icon li i{
+  	color: #838383;
+}
+
+.footer .foot-top .social-icon li i:hover{
+  	color: #87aa01;
+}
+
+.footer .foot-top .social-icon p{
+  	color: #888;
+}
+
+.footer .foot-top .heading-con{
+	color: #87aa01;
+}
+
+.footer .foot-top .address-list i{
+	color: #888;
+	border: 1px solid #888;
+}
+
+.footer .foot-top .address-list li:hover i{
+	color: #87aa01;
+	border-color: #87aa01;
+}
+
+.footer .foot-top .address-list p{
+  	color: #888;
+}
+
+.header-two{
+  	background: transparent;
+}
+
+.main-navigation .nav-menu>.menu-item>a,
+.page-banner h3{
+  	color: #fff;
+}
+
+.page-banner::after, .widget_block .wp-block-search__button{
+	background: #000;
+	opacity: 0.7;
+}
+
+.section-title-5 .separator ul li{
+	color: #87aa01 !important;
+}
+.footer .footer-widget .wp-block-group h2:after, .foot-title h4::after, .widget_search .wp-block-search .wp-block-search__label:after, .sidebar .sidebar-widget .wp-block-group .wp-block-group__inner-container h2:after, .title-sep2::after{
+	background-color: #87aa01 !important;
+}
+.search-form input[type="submit"] {
+    border: none;
+}
