@@ -18,7 +18,8 @@ use PHPMailer\PHPMailer\SMTP;
 $success = true;
 $id = $_GET['id'];
 $termsId = explode("_",$id);
-$title = $_GET['title'];
+$tipus = "";
+$element = "";
 $msg = "";
 $code = "";
 $school = "";
@@ -35,13 +36,17 @@ if(isset($_POST['submit'])) {
 	$i=0; 
 	foreach($termsId as $termId): 
 		$id = "subject_".$i;
-		if ($i == 0){
+		if ($i == 0){ // Avaries i errors
 			$subject = $_POST[$id];
+		} if ($i == 1){ // Tipus d'avaria.
+			$tipus = $_POST[$id];
+			$subject = $subject."->".$_POST[$id];
 		} else {
 			$subject = $subject."->".$_POST[$id];
 		}
 		$i++; 
 	endforeach;
+	$element = $_POST['subject_'.$i]; // Gets de value of the last item
 	$code = $_POST['code'];
 	$school = $_POST['school'];
 	$person = $_POST['person'];
@@ -93,12 +98,14 @@ if(isset($_POST['submit'])) {
 				$mail->Subject = $subject;
 				$mail->isHTML(true);
 				$mail->Body = '<h2>Formulari</h2> 
-					<p><b>Formulari:</b>[EDUCACIO]</p> 
+					<p><b>Formulari:</b>[CAU]</p> 
 					<p><b>Codi del centre:</b> '.$code.'</p> 
 					<p><b>Nom coordinador:</b> '.$person.'</p> 
 					<p><b>Telèfon centre:</b><br/>'.$phone.'</p> 
 					<p><b>Email:</b><br/>'.$email.'</p> 
-					<p><b>Descripció:</b><br/>'.$description.'</p>';
+					<p><b>Descripció:</b><br/>'.$description.'</p>
+					<p><b>Codi tipo:</b><br/>'.$tipus.'</p>
+					<p><b>Element:</b><br/>'.$element.'</p>';
 
 				if(!empty($_FILES["attachment"]["name"])){
 					$mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);

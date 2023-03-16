@@ -95,7 +95,8 @@ if(isset($_POST['submit'])) {
 					<p><b>Codi del centre:</b> '.$code.'</p> 
 					<p><b>Nom coordinador:</b> '.$person.'</p> 
 					<p><b>Telèfon centre:</b><br/>'.$phone.'</p> 
-					<p><b>Email:</b><br/>'.$email.'</p>';
+					<p><b>Email:</b><br/>'.$email.'</p>
+					<p><b>Contracte:</b><br/>'.$acordmarc.'</p>';
 
 				$mail->addAttachment($_FILES['fullcomanda']['tmp_name'], $_FILES['fullcomanda']['name']);
 				$mail->addAttachment($_FILES['memoriajustificativa']['tmp_name'], $_FILES['memoriajustificativa']['name']);
