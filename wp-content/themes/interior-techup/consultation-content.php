@@ -28,13 +28,13 @@ $allowFileTypes = array('pdf', 'jpg', 'png', 'jpeg');
 //chech chaptcha when user submit form
 if(isset($_POST['submit'])) {
 	
-	$subject = "Consultes i propostes";
 	$code = $_POST['code'];
 	$school = $_POST['school'];
 	$person = $_POST['person'];
 	$phone = $_POST['phone'];
 	$email = $_POST['email'];
 	$description = $_POST['description'];
+	$subject = "[EDUCACIO] ".$school." Consultes i propostes";
 	$file = null;
 	
 	$ok = true;
@@ -71,6 +71,7 @@ if(isset($_POST['submit'])) {
 			if ($success) {
 				//Send email to RT
 				$mail = new PHPMailer();
+				$mail->CharSet = "UTF-8";
 				$mail->isSendmail();
 				$mail->setFrom($email, $person);
 				$mail->addAddress(EMAIL_CAU_EDUCACIO, 'CAU Educació');
@@ -78,11 +79,11 @@ if(isset($_POST['submit'])) {
 				$mail->Subject = $subject;
 				$mail->isHTML(true);
 				$mail->Body = '<h2>Formulari</h2> 
-					<p><b>Formulari:</b>[EDUCACIO]</p> 
-					<p><b>Codi del centre:</b> '.$code.'</p> 
-					<p><b>Nom coordinador:</b> '.$person.'</p> 
-					<p><b>Telèfon centre:</b><br/>'.$phone.'</p> 
-					<p><b>Descripció:</b><br/>'.$description.'</p>';
+					<p><b>- Formulari:</b>[EDUCACIO]</p> 
+					<p><b>- Codi del centre:</b> '.$code.'</p> 
+					<p><b>- Nom coordinador:</b> '.$person.'</p> 
+					<p><b>- Telèfon centre:</b>'.$phone.'</p> 
+					<p><b>- Descripció:</b>'.$description.'</p>';
 
 				if(!empty($_FILES["attachment"]["name"])){
 					$mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);

@@ -62,12 +62,12 @@ if(isset($_POST['submit'])) {
 		//Here put code for form processing after captcha is accepted 
 		// Form connection
 		if(isset($_POST)){
-			$subject = $acordmarc. "->".$lot;
 			$code = $_POST['code'];
 			$school = $_POST['school'];
 			$person = $_POST['person'];
 			$phone = $_POST['phone'];
 			$email = $_POST['email'];
+			$subject = "[ACORD MARC]" .$school. ". ".$acordmarc. "->".$lot;
 			$fullComandaFile = $_FILES["fullcomanda"]["name"];
 			$memoJustFile = $_FILES["memoriajustificativa"]["name"];
 			$dispoFonsFile = $_FILES["disponibilitatfons"]["name"]; 
@@ -85,18 +85,19 @@ if(isset($_POST['submit'])) {
 				//Send email to RT
 				$mail = new PHPMailer();
 				$mail->isSendmail();
+				$mail->CharSet = "UTF-8";
 				$mail->setFrom($email, $person);
 				$mail->addAddress(EMAIL_CAU_EDUCACIO, 'CAU Educació');
 
 				$mail->Subject = $subject;
 				$mail->isHTML(true);
 				$mail->Body = '<h2>Formulari</h2> 
-					<p><b>Formulari:</b>[ACORD MARC]</p> 
-					<p><b>Codi del centre:</b> '.$code.'</p> 
-					<p><b>Nom coordinador:</b> '.$person.'</p> 
-					<p><b>Telèfon centre:</b><br/>'.$phone.'</p> 
-					<p><b>Email:</b><br/>'.$email.'</p>
-					<p><b>Contracte:</b><br/>'.$acordmarc.'</p>';
+					<p><b>- Formulari:</b>[ACORD MARC]</p> 
+					<p><b>- Codi del centre:</b> '.$code.'</p> 
+					<p><b>- Nom coordinador:</b> '.$person.'</p> 
+					<p><b>- Telèfon centre:</b>'.$phone.'</p> 
+					<p><b>- Email:</b>'.$email.'</p>
+					<p><b>- Contracte:</b>'.$acordmarc.'</p>';
 
 				$mail->addAttachment($_FILES['fullcomanda']['tmp_name'], $_FILES['fullcomanda']['name']);
 				$mail->addAttachment($_FILES['memoriajustificativa']['tmp_name'], $_FILES['memoriajustificativa']['name']);

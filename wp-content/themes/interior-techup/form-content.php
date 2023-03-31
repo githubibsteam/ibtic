@@ -53,6 +53,7 @@ if(isset($_POST['submit'])) {
 	$phone = $_POST['phone'];
 	$email = $_POST['email'];
 	$description = $_POST['description'];
+	$subject = "[CAU] ".$school.". ".$subject;
 	$file = null;
 
 	$ok = true;
@@ -89,6 +90,7 @@ if(isset($_POST['submit'])) {
 			if ($success) {
 				//Send email to RT
 				$mail = new PHPMailer();
+				$mail->CharSet = "UTF-8";
 				$mail->isSMTP();
 				$mail->Host = 'rmaila.caib.es';
 				$mail->Port=25;
@@ -98,14 +100,14 @@ if(isset($_POST['submit'])) {
 				$mail->Subject = $subject;
 				$mail->isHTML(true);
 				$mail->Body = '<h2>Formulari</h2> 
-					<p><b>Formulari:</b>[CAU]</p> 
-					<p><b>Codi del centre:</b> '.$code.'</p> 
-					<p><b>Nom coordinador:</b> '.$person.'</p> 
-					<p><b>Telèfon centre:</b><br/>'.$phone.'</p> 
-					<p><b>Email:</b><br/>'.$email.'</p> 
-					<p><b>Descripció:</b><br/>'.$description.'</p>
-					<p><b>Codi tipo:</b><br/>'.$tipus.'</p>
-					<p><b>Element:</b><br/>'.$element.'</p>';
+					<p><b>- Formulari:<b> [CAU]</p> 
+					<p><b>- Codi del centre:</b> '.$code.'</p> 
+					<p><b>- Nom coordinador:</b> '.$person.'</p> 
+					<p><b>- Telèfon centre:</b>'.$phone.'</p> 
+					<p><b>- Email:</b><br/>'.$email.'</p> 
+					<p><b>- Descripció:</b>'.$description.'</p>
+					<p><b>- Codi tipo:</b>'.$tipus.'</p>
+					<p><b>- Element:</b>'.$element.'</p>';
 
 				if(!empty($_FILES["attachment"]["name"])){
 					$mail->addAttachment($_FILES['attachment']['tmp_name'], $_FILES['attachment']['name']);
