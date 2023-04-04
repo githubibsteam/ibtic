@@ -37,8 +37,7 @@
 	$url = get_permalink();
 	
 	//disembl the url to names of categories
-	$n = (ENVIRONMENT=='local' ? -2 : -1);
-	$catUrl = explode("/",$url, -2);
+	$catUrl = explode("/", $url, -2);
 	$lengthUrl = count($catUrl);
 	
 
@@ -52,7 +51,7 @@
 		
 		if($i == $explode_items)
 		{
-		$fId = $id;
+			$fId = $id;
 		}
 		else if($i > $explode_items){
 			$fId = $fId."_".$id;
@@ -62,7 +61,7 @@
 		
 		<!--button to form with parametrs saved in url-->
 		<div style="padding: 20px; text-align: center">
-			<a href="coordtic/form?id=<?php echo $fId;?>&title=<?php echo $title = str_replace('-', '_', get_the_title());?>" class="btn-2 mt-3">Formulari de contacte</a>
+			<a href="coordtic/form?id=<?php echo $fId;?>&idpost=<?=get_the_ID();?>" class="btn-2 mt-3">Formulari de contacte</a>
 		</div>
 	</div>
 </article>

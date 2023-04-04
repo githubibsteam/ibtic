@@ -18,6 +18,7 @@ use PHPMailer\PHPMailer\SMTP;
 $success = true;
 $id = $_GET['id'];
 $termsId = explode("_",$id);
+$idpost = $_GET['idpost'];
 $tipus = "";
 $element = "";
 $msg = "";
@@ -213,15 +214,17 @@ if(isset($_POST['submit'])) {
 							<?php   
 							//get all posts in last category selected before
 							$posts = get_posts( array(
-							'orderby' => 'name',
-							'order'   => 'ASC',
-							'nopaging' => true,
-							'cat' => $termId) );
+								'orderby' => 'name',
+								'order'   => 'ASC',
+								'nopaging' => true,
+								'cat' => $termId) );
 							?>
 							
 							<select name="subject_<?=$i?>" onchange="catSelect()" id="subject_<?=$i?>">						
 								<?php  foreach($posts as $post): ?>
-									<option  value="<?php echo $post->post_title; ?>"> <?php echo $post->post_title; ?> </option>
+									<option <?php if ($post->ID == $idpost){echo "selected";}?> value="<?php echo $post->post_title; ?>">
+									<?php echo $post->post_title; ?> 
+									</option>
 								<?php endforeach; ?>
 							</select> 
 						</div>
